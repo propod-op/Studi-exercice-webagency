@@ -93,58 +93,66 @@
         </div>
       </section>
       <section class="map">
-        <h2>NOUS CONTACTER</h2>
-        <hr />
-        <p>
-          Beaucoup d'entreprises et particuliers nous ont fais confiance pour
-          leurs projets <br />
-          Découvrez une selectionde nos réalisations tendances, moderne et
-          innovantes.
-        </p>
-        <img src="./assets/img/map.jpg" alt="" />
-        <form>
-          <h3>Contact info</h3>
-          <p>WebAgency SAS</p>
-          <p>25 rue de d'Hauteville 75010 PARIS</p>
-          <p>Tél. : +33 1 02 03 04 05</p>
-          <div>
-            <label for="name">Nom</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              minlength="4"
-              maxlength="8"
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              required
-              minlength="4"
-              maxlength="150"
-            />
-          </div>
-          <div>
-            <label for="sujet">Sujet</label>
-            <input
-              type="text"
-              id="sujet"
-              name="sujet"
-              required
-              minlength="4"
-              maxlength="150"
-            />
-          </div>
-          <div>
-            <label for="message">Votre message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-        </form>
+        <div class="container title">
+          <h2>NOUS CONTACTER</h2>
+          <hr />
+          <p>
+            Beaucoup d'entreprises et particuliers nous ont fais confiance pour
+            leurs projets <br />
+            Découvrez une selectionde nos réalisations tendances, moderne et
+            innovantes.
+          </p>
+        </div>
+
+        <div class="container content">
+          <div class="map container"></div>
+
+          <form>
+            <h3>Contact info</h3>
+            <p>WebAgency SAS</p>
+            <p>25 rue de d'Hauteville 75010 PARIS</p>
+            <p>Tél. : +33 1 02 03 04 05</p>
+            <div>
+              <label for="name">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="4"
+                maxlength="8"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                minlength="4"
+                maxlength="150"
+              />
+            </div>
+            <div>
+              <label for="sujet">Sujet</label>
+              <input
+                type="text"
+                id="sujet"
+                name="sujet"
+                required
+                minlength="4"
+                maxlength="150"
+              />
+            </div>
+
+            <div>
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Envoyer le message</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>
