@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/content.css" />
+    <title>Webagency</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/img/logo-full-bleu.png" alt="" />
+      <ul>
+        <li>Accueil</li>
+        <li>Services</li>
+        <li>Portefolio</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="carousel">
+        <div class="carousel">
+          <button class="prev"></button>
+          <img src="./assets/img/image-carousel-3.png" alt="" />
+          <button class="next"></button>
+        </div>
+      </section>
+      <section class="nos-services">
+        <h2>NOS SERVICES</h2>
+        <hr />
+        <p>
+          De taille humaine, notre agence vous accompagne du début à la fin de
+          votre projet. Nos experts vous aident à optimiser l'expérience
+          utilisateur et tirer le meilleur potentiel de chaque support, du web
+          au mobile.
+        </p>
+        <div class="container">
+          <img src="./assets/img/imac-3.jpeg" alt="" />
+          <ul>
+            <li>
+              <img src="./assets/img/icone-ux.png" alt="clipart ux design" />
+              <p>
+                <b>UX design</b><br />
+                Une équipe passionnée qui place l'utilisateur final au centre de
+                sa démarche pour une technologie plus humaine.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/img/icone-ui.png" alt="clipart ux design" />
+              <p>
+                <b>UI design</b><br />
+                Une interface optimisée qui permet à votre site web de rester à
+                la page au gré des évolutions techniques et des nouveaux usages.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/img/icone-seo.png" alt="clipart ux design" />
+              <p>
+                <b>SEO</b><br />
+                Nos experts en référencement vous permettent d'améliorer le
+                positionnement de votre site afin d'augmenter votre conversion.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="nos-projets">
+        <h2>NOS PROJETS</h2>
+        <hr />
+        <p>
+          Beaucoup d'entreprises et particuliers nous ont fais confiance pour
+          leurs projets <br />
+          Découvrez une selectionde nos réalisations tendances, moderne et
+          innovantes.
+        </p>
+        <div class="articles container">
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+        </div>
+      </section>
+      <section class="map">
+        <h2>NOUS CONTACTER</h2>
+        <hr />
+        <p>
+          Beaucoup d'entreprises et particuliers nous ont fais confiance pour
+          leurs projets <br />
+          Découvrez une selectionde nos réalisations tendances, moderne et
+          innovantes.
+        </p>
+        <img src="./assets/img/map.jpg" alt="" />
+        <form>
+          <h3>Contact info</h3>
+          <p>WebAgency SAS</p>
+          <p>25 rue de d'Hauteville 75010 PARIS</p>
+          <p>Tél. : +33 1 02 03 04 05</p>
+          <div>
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="4"
+              maxlength="8"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              minlength="4"
+              maxlength="150"
+            />
+          </div>
+          <div>
+            <label for="sujet">Sujet</label>
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              required
+              minlength="4"
+              maxlength="150"
+            />
+          </div>
+          <div>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

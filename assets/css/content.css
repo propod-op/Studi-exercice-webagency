@@ -1,0 +1,204 @@
+section {
+  width: 100%;
+}
+
+section.carousel div.carousel {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 20rem;
+
+  border-radius: 0.2rem;
+  border: 1px solid #b3b3b3;
+  overflow: hidden;
+}
+
+section.carousel div.carousel button {
+  position: absolute;
+  width: 2rem;
+  height: 4rem;
+
+  z-index: 10;
+  opacity: 0.5;
+  border: none;
+  background: none;
+  background-size: contain;
+  cursor: pointer;
+}
+
+section.carousel div.carousel button:hover {
+  opacity: 1;
+}
+
+section.carousel div.carousel button.prev {
+  top: calc(50% - 2.5rem);
+  left: 0px;
+  background-image: url("../img/carousel-bouton-left.png");
+}
+
+section.carousel div.carousel button.next {
+  top: calc(50% - 2.5rem);
+  right: 0px;
+  background-image: url("../img/carousel-bouton-right.png");
+}
+
+section.carousel div.carousel button:hover {
+  transition: opacity 0.35s ease;
+  opacity: 1;
+}
+
+section.carousel img {
+  width: 100%;
+  height: auto;
+  /* aspect-ratio: 1; */
+}
+
+/* ------ SECTION NOS SERVICES ----- */
+section.nos-services p,
+section.nos-services ul li {
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+section.nos-services .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  height: auto;
+}
+
+section.nos-services img {
+  width: 30%;
+  height: auto;
+}
+
+section.nos-services .container ul {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0;
+  list-style: none;
+}
+
+section.nos-services .container ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  /* list-style: none; */
+  margin-top: 1rem;
+}
+
+section.nos-services .container ul li img {
+  height: 70px;
+  width: 70px;
+}
+section.nos-services .container ul li p {
+  margin: 0;
+}
+
+section.nos-services .container ul li b {
+  /* list-style: none; */
+  font-weight: 600;
+}
+
+/* ------ SECTION NOS PROJETS ----- */
+section.nos-projets {
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+section.nos-projets > p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+section.nos-projets div.container.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
+  gap: 1rem;
+}
+
+section.nos-projets div.container.articles article {
+  background-color: rgb(212, 212, 212);
+  height: 20rem;
+}
+
+section.nos-projets div.container.articles article:nth-child(1) {
+  background-color: rgb(170, 73, 56);
+}
+section.nos-projets div.container.articles article:nth-child(2) {
+  background-color: rgb(59, 101, 155);
+}
+section.nos-projets div.container.articles article:nth-child(3) {
+  background-color: rgb(126, 116, 114);
+}
+section.nos-projets div.container.articles article:nth-child(4) {
+  background-color: rgb(56, 47, 46);
+}
+
+section.nos-projets div.container.articles article:nth-child(5) {
+  background-color: rgb(170, 73, 56);
+}
+section.nos-projets div.container.articles article:nth-child(6) {
+  background-color: rgb(75, 124, 55);
+}
+section.nos-projets div.container.articles article:nth-child(7) {
+  background-color: rgb(12, 48, 26);
+}
+
+section.nos-projets div.container.articles article:nth-child(1) {
+  background-color: rgb(99, 59, 104);
+}
+
+/* ------ SECTION CONTACT ----- */
+section.map {
+  position: relative;
+  height: auto;
+}
+
+section.map form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: 25%;
+  height: auto;
+
+  padding: 1.2rem;
+  right: 2rem;
+  top: 13rem;
+
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;
+  opacity: 0.85;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+section.map form h3,
+section.map form p {
+  margin: 0;
+  text-align: center;
+}
+
+section.map form input {
+  width: 100%;
+  height: 2rem;
+}
+
+section.map form textarea {
+  width: 100%;
+  height: 10rem;
+}
