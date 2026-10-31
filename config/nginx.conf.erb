@@ -10,7 +10,7 @@ http {
   server {
     listen <%= ENV["PORT"] %>;
     server_name _;
-    root /app/;   # ou /app si vos fichiers HTML sont à la racine
+    root /app;   # ou /app si vos fichiers HTML sont à la racine
 
     location / {
       index index.html;
