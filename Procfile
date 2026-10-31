@@ -1,0 +1,1 @@
+web: bin/start-nginx nginx -c config/nginx.conf
