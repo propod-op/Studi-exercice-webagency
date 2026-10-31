@@ -1,4 +1,5 @@
 daemon off;
+worker_processes 1;
 error_log /dev/stdout info;
 
 events { worker_connections 1024; }
@@ -6,14 +7,15 @@ events { worker_connections 1024; }
 http {
   include /app/config/mime.types;
   access_log /dev/stdout;
+  sendfile on;
 
   server {
     listen <%= ENV["PORT"] %>;
     server_name _;
-    root /app;   # ou /app si vos fichiers HTML sont à la racine
+    root /app;
+    index index.html;
 
     location / {
-      index index.html;
       try_files $uri $uri/ =404;
     }
   }
